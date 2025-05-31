@@ -1,0 +1,2 @@
+# Toyota Motors Stock Price Prediction 
+This project presents a time series forecasting analysis of Toyota Motors Corporation’s daily stock closing prices using historical data from 2021 to 2025. The analysis was conducted as part of a graduate-level data mining course and aims to support strategic financial planning by identifying trends, seasonality, and volatility in Toyota’s stock performance.
