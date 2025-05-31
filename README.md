@@ -32,8 +32,11 @@ Stationarity Testing: Augmented Dickey-Fuller (ADF) test confirmed non-stationar
 # Modeling Techniques
 
 Naïve Forecasting: Used as a baseline.
+
 STL + ETS: Captured trend and seasonality.
+
 ARIMA: Automatically selected via auto.arima(), but underperformed.
+
 Random Walk with Drift (RWF): Outperformed all other models in test accuracy.
 
 # Validation Strategy
