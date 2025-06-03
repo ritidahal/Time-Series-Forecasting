@@ -25,53 +25,53 @@ The dataset spans from January 2021 to early 2025, covering over 1,000 trading d
 
 The forecasting pipeline included:
 
-Exploratory Data Analysis (EDA): Identified trends, seasonal patterns, and distribution shifts.
+- Exploratory Data Analysis (EDA): Identified trends, seasonal patterns, and distribution shifts.
 
-Stationarity Testing: Augmented Dickey-Fuller (ADF) test confirmed non-stationarity; first-order differencing was applied.
+- Stationarity Testing: Augmented Dickey-Fuller (ADF) test confirmed non-stationarity; first-order differencing was applied.
 
 # Modeling Techniques
 
-Naïve Forecasting: Used as a baseline.
+- Naïve Forecasting: Used as a baseline.
 
-STL + ETS: Captured trend and seasonality.
+- STL + ETS: Captured trend and seasonality.
 
-ARIMA: Automatically selected via auto.arima(), but underperformed.
+- ARIMA: Automatically selected via auto.arima(), but underperformed.
 
-Random Walk with Drift (RWF): Outperformed all other models in test accuracy.
+- Random Walk with Drift (RWF): Outperformed all other models in test accuracy.
 
 # Validation Strategy
 
-Training Set: Jan 2021 – Dec 2024
+- Training Set: Jan 2021 – Dec 2024
 
-Test Set: Jan 2025 onward
+- Test Set: Jan 2025 onward
 
-Metrics: RMSE, MAPE, MASE
+- Metrics: RMSE, MAPE, MASE
 
 # Key Findings
 
-Seasonality: Monthly patterns were observed, with notable price increases in mid-year and declines in late 2024.
+- Seasonality: Monthly patterns were observed, with notable price increases in mid-year and declines in late 2024.
 
-Volatility: 2024 showed increased unpredictability, likely due to external market shocks.
+- Volatility: 2024 showed increased unpredictability, likely due to external market shocks.
 
-Best Model: Random Walk with Drift (RWF) achieved the lowest test RMSE (10.53), MAPE (3.78%), and MASE (0.27).
+- Best Model: Random Walk with Drift (RWF) achieved the lowest test RMSE (10.53), MAPE (3.78%), and MASE (0.27).
 
-Forecast: Toyota’s stock price is projected to steadily increase through 2025, with December 2025 forecasted at approximately $247.36 (95% CI: $163.87–$330.85).
+- Forecast: Toyota’s stock price is projected to steadily increase through 2025, with December 2025 forecasted at approximately $247.36 (95% CI: $163.87–$330.85).
 
 # Strategic Implications
-Investment Planning: The forecast supports gradual stock appreciation, useful for portfolio allocation.
+- Investment Planning: The forecast supports gradual stock appreciation, useful for portfolio allocation.
 
-Risk Management: Confidence intervals highlight potential volatility, suggesting the need for buffer strategies.
+- Risk Management: Confidence intervals highlight potential volatility, suggesting the need for buffer strategies.
 
 # Model Limitations
 
-Does not account for macroeconomic variables (e.g., interest rates, inflation).
+- Does not account for macroeconomic variables (e.g., interest rates, inflation).
 
-May not capture sudden market shocks or black swan events.
+- May not capture sudden market shocks or black swan events.
 
 # Recommendations
 
-Use RWF model outputs for short-term planning and scenario analysis.
+- Use RWF model outputs for short-term planning and scenario analysis.
 
-Consider integrating external regressors (e.g., oil prices, economic indicators) in future iterations.
+- Consider integrating external regressors (e.g., oil prices, economic indicators) in future iterations.
 
-Monitor residual autocorrelation to refine model assumptions.
+- Monitor residual autocorrelation to refine model assumptions.
